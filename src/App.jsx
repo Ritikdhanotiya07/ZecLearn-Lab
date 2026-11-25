@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useMemo, createContext, useContext } from 'react';
 import {
-  Shield,
   ShieldCheck,
   ShieldAlert,
   Lock,
@@ -989,8 +988,11 @@ function BrandLogo({ compact = false, onClick }) {
       className="flex items-center gap-2.5 text-left group focus:outline-none"
     >
       <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/20 to-violet-500/20 border border-emerald-500/30 shadow-inner group-hover:border-emerald-400/60 transition-colors">
-        <Shield className="h-5 w-5 text-emerald-400" />
-        <span className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full bg-emerald-400 ring-2 ring-[#050814]" />
+        <img
+          src="/zcash-logo.png"
+          alt=""
+          className="h-7 w-7 rounded-full object-contain"
+        />
       </div>
       {!compact && (
         <div className="leading-tight">
